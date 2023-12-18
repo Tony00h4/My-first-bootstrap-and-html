@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="display: flex;">
+                <img src="https://picsum.photos/200" alt="" width="40" height="40" class="d-inline-block align-text-top">
+                <h1>The Clean Rivers Society</h1>
+            </a>
+            <div class="buttons_container">
+                <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#signup" aria-controls="signup">
+                    Signup
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="signup"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">SIGNUP</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            <form>
+                                <div class="mb-3">
+                                    <input class="form-control" type="text" placeholder="Your Name"
+                                        aria-label="default input example">
+                                    <label for="phone" class="form-label">Phone</label>
+                                    <input class="form-control" type="number" placeholder="+1 234 567 8901"
+                                        aria-label="default input example">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        placeholder="name@example.com" aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                    </div>
+                                    <label for="exampleDataList" class="form-label">Location</label>
+                                    <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                        placeholder="Type to search...">
+                                    <datalist id="datalistOptions">
+                                        <option value="San Francisco">
+                                        <option value="New York">
+                                        <option value="Seattle">
+                                        <option value="Los Angeles">
+                                        <option value="Chicago">
+                                        <option value="Texas"></option>
+                                    </datalist>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#donate"
+                    aria-controls="donate">
+                    Donate
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="donate"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">DONATE</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            <form>
+                                <div class="mb-3"><label for="name" class="form-label">Name</label>
+                                    <input class="form-control" type="text" placeholder="Your Name"
+                                        aria-label="default input example">
+                                    <label for="phone" class="form-label">Phone</label>
+                                    <input class="form-control" type="number" placeholder="+1 234 567 8901"
+                                        aria-label="default input example">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        placeholder="name@example.com" aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                    </div>
+                                </div>
+                                <div class="icons">
+                                    <i class="fa-brands fa-cc-mastercard fa-3"></i>
+                                    <i class="fa-brands fa-cc-visa fa-3"></i>
+                                </div>
+                                <div class="card-details">
+                                    <label for="card-number" class="form-label">Card Number</label>
+                                    <input class="form-control" type="number" placeholder="1234567890"
+                                        aria-label="default input example">
+                                    <label for="expiry-date" class="form-label">Expiry Date</label>
+                                    <input class="form-control" type="year" placeholder="2025"
+                                        aria-label="default input example">
+                                    <label for="cvv" class="form-label">CVV</label>
+                                    <input class="form-control" type="number" placeholder="123"
+                                        aria-label="default input example">
+                                    <label for="ammount" class="form-label">Amount</label>
+                                    <input class="form-control" type="number" placeholder="$10"
+                                        aria-label="default input example">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Send me Emails about our
+                                        operations</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#volunteer"
+                    aria-controls="volunteer">
+                    Volunteer
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="volunteer"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">VOLUNTEER</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            <form>
+                                <label for="name" class="form-label">Name</label>
+                                <input class="form-control" type="text" placeholder="Your Name"
+                                    aria-label="default input example">
+                                <label for="phone" class="form-label">Phone</label>
+                                <input class="form-control" type="number" placeholder="+1 234 567 8901"
+                                    aria-label="default input example">
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        placeholder="name@example.com" aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                    </div>
+                                </div>
+                                <label for="exampleDataList" class="form-label">Location</label>
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="Type to search...">
+                                <datalist id="datalistOptions">
+                                    <option value="San Francisco">
+                                    <option value="New York">
+                                    <option value="Seattle">
+                                    <option value="Los Angeles">
+                                    <option value="Chicago">
+                                    <option value="Texas"></option>
+                                </datalist>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Send me Emails about our
+                                        operations</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="row">
+        <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="identity.html" role="button" aria-expanded="false">Our Identity</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="facts.html" role="button" aria-expanded="false">Facts and
+                        Figures</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="programs.html">Our Programs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="team.html">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Adendum.html" role="button" aria-expanded="false">Addendum</a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+
+
+    <div class="container text-center">
+        <div class="row align-items-start">
+            <h2>Facts and Figures</h2>
+            <div class="col text-start">
+                <h2 >Facts</h2>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Impared Water Bodies</h5>
+                        <p class="card-text">According to the U.S. Environmental Protection Agency (EPA), around 46% of
+                            assessed rivers and streams, 20% of lakes,
+                            and 32% of estuaries in the United States were classified as impaired, meaning they did not
+                            meet water quality
+                            standards.</p>
+                        <a href="https://www.epa.gov/sites/default/files/2015-09/documents/2000_07_07_305b_98report_98brochure.pdf"
+                            class="btn btn-primary">Link</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Nutrient Pollution</h5>
+                        <p class="card-text">Nutrient pollution remained a significant issue. Excess nutrients,
+                            particularly phosphorus and nitrogen, contributed to
+                            issues such as harmful algal blooms, hypoxia, and eutrophication in various water bodies.
+                        </p>
+                        <a href="https://oceanservice.noaa.gov/facts/nutpollution.html#:~:text=Nutrient%20pollution%20is%20the%20process,and%20garden%20fertilizers%20are%20used."
+                            class="btn btn-primary">Link</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Clean Water Act Compliance</h5>
+                        <p class="card-text">The EPA reported that, only 21% of assessed rivers
+                            and streams fully met water quality standards
+                            for key water quality indicators.</p>
+                        <a href="https://www.epa.gov/sites/default/files/2017-12/documents/305brtc_finalowow_08302017.pdf"
+                            class="btn btn-primary">Link</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Industrial Discharges</h5>
+                        <p class="card-text">The industrial sector continued to be a source of water pollution.
+                            Effluents containing chemicals, heavy metals, and
+                            other pollutants from industrial activities contributed to the contamination of water
+                            bodies.</p>
+                        <a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/industrial-effluent#:~:text=Industrial%20effluents%20are%20discharged%20into,on%20living%20organisms%20%5B109%5D."
+                            class="btn btn-primary">Link</a>
+                    </div>
+                </div>
+            </div>
+            <style>
+                img{max-width: 25rem; max-height: 25rem;}
+            </style>
+            <div class="col">
+                <h2>Figures</h2>
+                <div class="col p-4">
+                <div class="container rounded-3">
+                    <img src="https://picsum.photos/200" alt="" class="rounded-3">
+                </div>
+                </div>
+                <div class="col p-4">
+                    <div class="container rounded-3">
+                        <img src="https://picsum.photos/200" alt="" class="rounded-3">
+                    </div>
+                </div>
+                <div class="col p-4">
+                    <div class="container rounded-3">
+                        <img src="https://picsum.photos/200" alt="" class="rounded-3">
+                    </div>
+                </div>
+                <div class="col p-4">
+                    <div class="container rounded-3">
+                        <img src="https://picsum.photos/200" alt="" class="rounded-3">
+                    </div>
+                </div>
+                <div class="col p-4">
+                    <div class="container rounded-3">
+                        <img src="https://picsum.photos/200" alt="" class="rounded-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row footer">
+            <div class="container text-center">
+                <div class="row align-items-end">
+                    <div class="col align-items-start">
+                        <form class="row g-3">
+                            <div class="col-auto">
+                                <label for="staticEmail2" class="visually-hidden">Email</label>
+                                <input type="text" class="form-control-plaintext" id="staticEmail2"
+                                    placeholder="example@gmail.com">
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-primary mb-3">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col align-content-start">
+                        <i class="fa fa-location-pin"
+                            style="display: flex; align-items: center; justify-content: center;">
+                            <p><br>. 24 Elton ST. IL</p>
+                        </i>
+                        <p>Phone: +1 234 567 8904</p>
+                        <p>Email: thebetterplanetsociety@yahoo.com</p>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <i class="fa-brands fa-square-facebook fa-2x"></i>
+                            <i class="f fa-brands fa-twitter-square fa-2x"></i>
+                            <i class="fa fa-brands fa-instagram fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

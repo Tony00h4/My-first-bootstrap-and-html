@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="display: flex;">
+                <img src="https://picsum.photos/200" alt="" width="40" height="40" class="d-inline-block align-text-top">
+                <h1>The Clean Rivers Society</h1>
+            </a>
+            <div class="buttons_container">
+                <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#signup" aria-controls="signup">
+                    Signup
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="signup"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">SIGNUP</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            <form>
+                                <div class="mb-3">
+                                    <input class="form-control" type="text" placeholder="Your Name"
+                                        aria-label="default input example">
+                                    <label for="phone" class="form-label">Phone</label>
+                                    <input class="form-control" type="number" placeholder="+1 234 567 8901"
+                                        aria-label="default input example">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        placeholder="name@example.com" aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                    </div>
+                                    <label for="exampleDataList" class="form-label">Location</label>
+                                    <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                        placeholder="Type to search...">
+                                    <datalist id="datalistOptions">
+                                        <option value="San Francisco">
+                                        <option value="New York">
+                                        <option value="Seattle">
+                                        <option value="Los Angeles">
+                                        <option value="Chicago">
+                                        <option value="Texas"></option>
+                                    </datalist>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#donate"
+                    aria-controls="donate">
+                    Donate
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="donate"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">DONATE</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            <form>
+                                <div class="mb-3"><label for="name" class="form-label">Name</label>
+                                    <input class="form-control" type="text" placeholder="Your Name"
+                                        aria-label="default input example">
+                                    <label for="phone" class="form-label">Phone</label>
+                                    <input class="form-control" type="number" placeholder="+1 234 567 8901"
+                                        aria-label="default input example">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        placeholder="name@example.com" aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                    </div>
+                                </div>
+                                <div class="icons">
+                                    <i class="fa-brands fa-cc-mastercard fa-3"></i>
+                                    <i class="fa-brands fa-cc-visa fa-3"></i>
+                                </div>
+                                <div class="card-details">
+                                    <label for="card-number" class="form-label">Card Number</label>
+                                    <input class="form-control" type="number" placeholder="1234567890"
+                                        aria-label="default input example">
+                                    <label for="expiry-date" class="form-label">Expiry Date</label>
+                                    <input class="form-control" type="year" placeholder="2025"
+                                        aria-label="default input example">
+                                    <label for="cvv" class="form-label">CVV</label>
+                                    <input class="form-control" type="number" placeholder="123"
+                                        aria-label="default input example">
+                                    <label for="ammount" class="form-label">Amount</label>
+                                    <input class="form-control" type="number" placeholder="$10"
+                                        aria-label="default input example">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Send me Emails about our
+                                        operations</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#volunteer"
+                    aria-controls="volunteer">
+                    Volunteer
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="volunteer"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">VOLUNTEER</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            <form>
+                                <label for="name" class="form-label">Name</label>
+                                <input class="form-control" type="text" placeholder="Your Name"
+                                    aria-label="default input example">
+                                <label for="phone" class="form-label">Phone</label>
+                                <input class="form-control" type="number" placeholder="+1 234 567 8901"
+                                    aria-label="default input example">
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        placeholder="name@example.com" aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                    </div>
+                                </div>
+                                <label for="exampleDataList" class="form-label">Location</label>
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="Type to search...">
+                                <datalist id="datalistOptions">
+                                    <option value="San Francisco">
+                                    <option value="New York">
+                                    <option value="Seattle">
+                                    <option value="Los Angeles">
+                                    <option value="Chicago">
+                                    <option value="Texas"></option>
+                                </datalist>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Send me Emails about our
+                                        operations</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="row">
+        <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link active" href="identity.html" role="button" aria-expanded="false">Our Identity</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="facts.html" role="button" aria-expanded="false">Facts and Figures</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="programs.html">Our Programs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="team.html">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Adendum.html" role="button" aria-expanded="false">Addendum</a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <h1>OUR STORY</h1>
+                <h2>Ripples of change: The Clean River Society</h2>
+                <P>
+                    Once upon a time, in a town nestled between rolling hills and meandering streams, a group of
+                    passionate individuals came
+                    together with a shared vision - to protect and preserve the lifelines of their community, the
+                    rivers. Thus, the Clean
+                    Rivers Society was born, an organization dedicated to ensuring the health and vitality of the
+                    waterways that sustained
+                    both nature and the townsfolk.
+
+                    The founding members, a diverse group of environmentalists, scientists, and community leaders, were
+                    united by a common
+                    concern for the degradation of the local rivers. Pollution from industrial runoff, careless waste
+                    disposal, and the
+                    ever-growing urban footprint threatened to turn the once-pristine water sources into mere
+                    reflections of their former
+                    selves.
+
+                    Undeterred, the Clean Rivers Society embarked on a mission to raise awareness and bring about a
+                    positive change in the
+                    community's relationship with its rivers. They organized river clean-up events, engaging volunteers
+                    of all ages to roll
+                    up their sleeves and become stewards of the environment. The first clean-up day was a resounding
+                    success, with families,
+                    students, and local businesses joining forces to remove tons of plastic, debris, and pollutants from
+                    the riverbanks.
+
+                    Buoyed by their initial triumph, the society turned its attention to education. They visited
+                    schools, hosting workshops
+                    that enlightened students about the delicate balance of ecosystems and the interconnectedness of all
+                    living things.
+                    Children embraced the cause with infectious enthusiasm, planting the seeds of a new generation
+                    committed to preserving
+                    their natural heritage.
+
+                    The society also collaborated with local businesses to promote sustainable practices. Through
+                    workshops and incentives,
+                    they encouraged companies to adopt eco-friendly manufacturing processes, reduce waste, and implement
+                    responsible waste
+                    disposal methods. The community responded positively, recognizing the value of a clean environment
+                    not only for the sake
+                    of nature but also for the long-term well-being of their town.
+
+                    As the seasons changed, so did the rivers. The once-polluted waters began to sparkle with renewed
+                    vitality. Fish
+                    returned to their spawning grounds, and bird songs echoed along the banks. The community, once
+                    indifferent to the
+                    rivers' plight, now saw them as treasures to be cherished and protected.
+
+                    The Clean Rivers Society's efforts extended beyond the local community, gaining regional
+                    recognition. Other towns,
+                    inspired by their success, sought guidance on establishing similar initiatives. The ripple effect of
+                    positive change
+                    extended far beyond the borders of the initial endeavor.
+
+                    And so, the Clean Rivers Society continued its journey, a beacon of hope for communities worldwide.
+                    Through their
+                    dedication and unwavering commitment, they proved that a small group of individuals, armed with
+                    passion and a shared
+                    purpose, could indeed make waves of change that would resonate for generations to come.
+                </P>
+            </div>
+            <div class="column">
+                <h2>How our Society will Benefit the community</h2>
+                <p>
+                    The Clean Rivers Society is deeply committed to fostering positive change within the community by
+                    implementing a
+                    multifaceted approach that addresses various aspects of river conservation and community
+                    involvement. Here's how the
+                    society will actively contribute to the well-being of the community:
+                <ul>
+                    <li>
+                        <h5>Educational Programs:</h5>
+                        - The society will conduct educational programs in schools, community centers, and local events
+                        to
+                        raise awareness about
+                        the importance of clean rivers. This includes teaching the community about the ecological
+                        significance of rivers, the
+                        impact of pollution, and the role each individual plays in preserving water quality.
+                    </li>
+
+                    <li>
+                        <h5>Community Engagement:</h5>
+                        - Regular community meetings and workshops will be organized to involve residents in the
+                        decision-making process. This
+                        ensures that the society is attuned to the specific needs and concerns of the community,
+                        fostering a
+                        sense of shared
+                        responsibility.
+                    </li>
+
+                    <li>
+                        <h5>Clean-Up Initiatives:</h5>
+                        - Organizing regular river clean-up events is a core activity of the Clean Rivers Society. These
+                        events will not only
+                        physically remove pollutants from the rivers but also serve as community-building activities,
+                        bringing people together
+                        for a common cause.
+                    </li>
+
+
+                    <li>
+                        <h5>Youth Involvement:</h5>
+                        - Establishing youth programs and partnerships with local schools will empower the younger
+                        generation to become
+                        environmental stewards. Through initiatives like school clubs, environmental competitions, and
+                        field
+                        trips, the society
+                        will instill a sense of environmental responsibility in the hearts of the youth.
+                    </li>
+                </ul>
+                Through these comprehensive strategies, the Clean Rivers Society aims not only to clean and preserve
+                the rivers but also
+                to enrich the community's connection with its natural resources, promoting a sustainable and
+                harmonious coexistence
+                between people and the environment.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="row align-items-start">
+            <h1>Need For Clean River Society in the Community</h1>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Water Quality Deteroriation</h5>
+                        <p class="card-text">Comprehensive water quality assessments reveal elevated levels of
+                            pollutants, including heavy metals, nutrients, and
+                            industrial chemicals, in numerous rivers across the country. This degradation compromises
+                            the integrity of aquatic
+                            ecosystems and poses risks to human health.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Impact on Acuatic life</h5>
+                        <p class="card-text">Studies conducted on polluted rivers consistently demonstrate declines in
+                            fish populations and disruptions in aquatic
+                            food chains. The presence of toxins in the water negatively affects the reproductive success
+                            and survival of various
+                            species, leading to a reduction in biodiversity.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Health Risks to Communities</h5>
+                        <p class="card-text">Research links polluted river water to an increased prevalence of
+                            waterborne diseases in communities relying on these
+                            water sources. Contaminants such as pathogens and harmful chemicals pose a direct threat to
+                            public health, leading to
+                            illnesses and imposing a burden on healthcare systems.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Community Vulnerability</h5>
+                        <p class="card-text">Studies reveal that marginalized and economically disadvantaged communities
+                            are often disproportionately affected by
+                            river pollution. These communities may lack resources for adequate water treatment and face
+                            increased health risks,
+                            exacerbating existing social disparities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row footer">
+            <div class="container text-center">
+                <div class="row align-items-end">
+                    <div class="col align-items-start">
+                        <form class="row g-3">
+                            <div class="col-auto">
+                                <label for="staticEmail2" class="visually-hidden">Email</label>
+                                <input type="text" class="form-control-plaintext" id="staticEmail2"
+                                    placeholder="example@gmail.com">
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-primary mb-3">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col align-content-start">
+                        <i class="fa fa-location-pin"
+                            style="display: flex; align-items: center; justify-content: center;">
+                            <p><br>. 24 Elton ST. IL</p>
+                        </i>
+                        <p>Phone: +1 234 567 8904</p>
+                        <p>Email: thebetterplanetsociety@yahoo.com</p>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <i class="fa-brands fa-square-facebook fa-2x"></i>
+                            <i class="f fa-brands fa-twitter-square fa-2x"></i>
+                            <i class="fa fa-brands fa-instagram fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

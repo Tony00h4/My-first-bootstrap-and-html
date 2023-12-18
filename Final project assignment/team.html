@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="display: flex;">
+                <img src="https://picsum.photos/200" alt="" width="40" height="40" class="d-inline-block align-text-top">
+                <h1>The Clean Rivers Society</h1>
+            </a>
+            <div class="buttons_container">
+                <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#signup" aria-controls="signup">
+                    Signup
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="signup"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">SIGNUP</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            <form>
+                                <div class="mb-3">
+                                    <input class="form-control" type="text" placeholder="Your Name"
+                                        aria-label="default input example">
+                                    <label for="phone" class="form-label">Phone</label>
+                                    <input class="form-control" type="number" placeholder="+1 234 567 8901"
+                                        aria-label="default input example">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        placeholder="name@example.com" aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                    </div>
+                                    <label for="exampleDataList" class="form-label">Location</label>
+                                    <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                        placeholder="Type to search...">
+                                    <datalist id="datalistOptions">
+                                        <option value="San Francisco">
+                                        <option value="New York">
+                                        <option value="Seattle">
+                                        <option value="Los Angeles">
+                                        <option value="Chicago">
+                                        <option value="Texas"></option>
+                                    </datalist>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#donate"
+                    aria-controls="donate">
+                    Donate
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="donate"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">DONATE</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            <form>
+                                <div class="mb-3"><label for="name" class="form-label">Name</label>
+                                    <input class="form-control" type="text" placeholder="Your Name"
+                                        aria-label="default input example">
+                                    <label for="phone" class="form-label">Phone</label>
+                                    <input class="form-control" type="number" placeholder="+1 234 567 8901"
+                                        aria-label="default input example">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        placeholder="name@example.com" aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                    </div>
+                                </div>
+                                <div class="icons">
+                                    <i class="fa-brands fa-cc-mastercard fa-3"></i>
+                                    <i class="fa-brands fa-cc-visa fa-3"></i>
+                                </div>
+                                <div class="card-details">
+                                    <label for="card-number" class="form-label">Card Number</label>
+                                    <input class="form-control" type="number" placeholder="1234567890"
+                                        aria-label="default input example">
+                                    <label for="expiry-date" class="form-label">Expiry Date</label>
+                                    <input class="form-control" type="year" placeholder="2025"
+                                        aria-label="default input example">
+                                    <label for="cvv" class="form-label">CVV</label>
+                                    <input class="form-control" type="number" placeholder="123"
+                                        aria-label="default input example">
+                                    <label for="ammount" class="form-label">Amount</label>
+                                    <input class="form-control" type="number" placeholder="$10"
+                                        aria-label="default input example">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Send me Emails about our
+                                        operations</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#volunteer"
+                    aria-controls="volunteer">
+                    Volunteer
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="volunteer"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">VOLUNTEER</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            <form>
+                                <label for="name" class="form-label">Name</label>
+                                <input class="form-control" type="text" placeholder="Your Name"
+                                    aria-label="default input example">
+                                <label for="phone" class="form-label">Phone</label>
+                                <input class="form-control" type="number" placeholder="+1 234 567 8901"
+                                    aria-label="default input example">
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        placeholder="name@example.com" aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                    </div>
+                                </div>
+                                <label for="exampleDataList" class="form-label">Location</label>
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="Type to search...">
+                                <datalist id="datalistOptions">
+                                    <option value="San Francisco">
+                                    <option value="New York">
+                                    <option value="Seattle">
+                                    <option value="Los Angeles">
+                                    <option value="Chicago">
+                                    <option value="Texas"></option>
+                                </datalist>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Send me Emails about our
+                                        operations</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="row">
+        <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="identity.html" role="button" aria-expanded="false">Our Identity</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="facts.html" role="button" aria-expanded="false">Facts and Figures</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="programs.html">Our Programs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="team.html">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Adendum.html" role="button" aria-expanded="false">Addendum</a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="container">
+        <h1>FOUNDER</h1>
+        <div class="row">
+            <div class="col">
+                <img src="https://picsum.photos/200" class="img-thumbnail " style="height: 15rem;width: 15rem;border-radius: 50%;" alt="">
+                <h4>Pius Morgan</h4>
+                <h6>
+                    Environmental Leader | Advocate for Clean Rivers
+                </h6>
+                <p>
+                    <h5>Contact Information:</h5>
+                    Address: 123 Green Street, Riverdale, EcoCity
+                    Phone: (555) 555-1234
+                    Email: pius.morgan@email.com
+
+                </p>
+                <p>
+                    <h5>Objective</h5>
+                    Passionate environmentalist and visionary leader committed to preserving our rivers and waterways. Seeking opportunities
+                    to leverage a proven track record of initiating and leading impactful initiatives for the betterment of our communities
+                    and the environment.
+
+                </p>
+                <p>
+                    <h5>Professional Experience</h5>
+                    <h6>Founder, Clean Rivers Society</h6>
+                    <h6>January 2018 - Present</h6>
+                    
+                    Established and led the Clean Rivers Society, a nonprofit organization dedicated to the protection and restoration of
+                    rivers.
+                    Spearheaded community awareness campaigns resulting in a 25% increase in volunteer participation and secured $80,000
+                    in grants for river cleanup projects.
+                    Collaborated with government agencies, NGOs, and local businesses to implement sustainable practices and advocate for
+                    environmental policies.
+                    Developed and executed strategic plans to address water pollution, including the successful implementation of a river
+                    monitoring program.
+
+                </p>
+                <p>
+                    <h5>Environmental Project Manager</h5>
+                    <h6>June 2015 - December 2017</h6>
+                    <h6>Green Earth Foundation, EcoCity</h6>
+                    
+                    Managed and coordinated environmental projects, including river restoration initiatives and community education
+                    programs.
+                    Successfully secured $50,000 in funding for a wetland preservation project.
+                    Conducted environmental impact assessments and collaborated with stakeholders to ensure compliance with sustainability
+                    goals.
+
+                </p>
+                <p>
+                    <h4>Volunteer Experience</h4>
+                    <h5>River Cleanup Coordinator</h5>
+                    <h6>March 2013 - May 2015</h6>
+                    <h6>Eco Volunteers Network, EcoCity</h6>
+                    
+                    Organized and led monthly river cleanup events, engaging over 100 volunteers.
+                    Implemented educational workshops on water conservation and pollution prevention.
+
+                </p>
+                <p>
+                    <h5>Wildlife Habitat Restoration Volunteer</h5>
+                    <h6>September 2011 - February 2013</h6>
+                    <h6>Nature Conservancy, EcoCity</h6>
+                    
+                    Participated in habitat restoration projects, planting native vegetation and monitoring wildlife populations.
+
+                </p>
+                <p>
+                    <h5>Bachelor of Science in Environmental Science</h5>
+                    <h6>Green University, EcoCity</h6>
+                    <h6>August 2007 - May 2011</h6>
+                    
+                    <h6>Relevant coursework</h6> Environmental Policy, Water Quality Management, Ecological Conservation.
+
+                </p>
+                <p>
+                    <h5>Skills</h5>
+                    
+                    <h6>Leadership</h6> Proven ability to lead and inspire teams toward a common goal.
+                    <h6>Advocacy</h6> Strong advocate for environmental issues with a track record of influencing positive change.
+                    <h6>Communication</h6> Exceptional communication skills, adept at conveying complex environmental issues to diverse audiences.
+                    <h6>Collaboration</h6> Skilled in building partnerships and fostering collaboration among stakeholders.
+                    
+                    <h5>Certifications</h5>
+                    
+                    Certified Environmental Professional (CEP)
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row footer">
+            <div class="container text-center">
+                <div class="row align-items-end">
+                    <div class="col align-items-start">
+                        <form class="row g-3">
+                            <div class="col-auto">
+                                <label for="staticEmail2" class="visually-hidden">Email</label>
+                                <input type="text" class="form-control-plaintext" id="staticEmail2"
+                                    placeholder="example@gmail.com">
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-primary mb-3">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col align-content-start">
+                        <i class="fa fa-location-pin"
+                            style="display: flex; align-items: center; justify-content: center;">
+                            <p><br>. 24 Elton ST. IL</p>
+                        </i>
+                        <p>Phone: +1 234 567 8904</p>
+                        <p>Email: thebetterplanetsociety@yahoo.com</p>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <i class="fa-brands fa-square-facebook fa-2x"></i>
+                            <i class="f fa-brands fa-twitter-square fa-2x"></i>
+                            <i class="fa fa-brands fa-instagram fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
